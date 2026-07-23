@@ -4,7 +4,7 @@
 <img width="796" height="510" alt="image" src="https://github.com/user-attachments/assets/4a95ed5a-d4b4-434a-a13b-a5f666680b46" />
 
 
-## 🎛️ ECG Analog Front-End (AFE) Pipeline
+##  ECG Analog Front-End (AFE) Pipeline
 
 To ensure the **STM32WB55** receives a clean, centered, and low-noise ECG signal before digital processing, the raw biopotential passes through a custom multi-stage **Analog Front-End (AFE)**.
 
@@ -35,3 +35,15 @@ To ensure the **STM32WB55** receives a clean, centered, and low-noise ECG signal
 
  ###  Completed  circuit using CNC machine 
  <img width="899" height="1599" alt="WhatsApp Image 2026-07-19 at 18 00 29" src="https://github.com/user-attachments/assets/c4c46470-7ef3-4ae8-94a3-261934ddb795" />
+
+## Real-Time ECG Processing Pipeline
+
+The digitized ECG data is streamed from the **STM32WB55** to a Python application over **Bluetooth Low Energy (BLE)**, where it is processed and visualized in real time.
+
+### Key Features
+- Implemented a real-time ECG processing pipeline using **Python**, **NeuroKit2**, and **NumPy** for signal conditioning, R-peak detection, and physiological parameter extraction.
+- Performed Pan–Tompkins-based ECG filtering, R-peak detection, peak correction, and signal quality assessment to improve measurement reliability.
+- Computed real-time **Heart Rate (HR)**, **SDNN**, and **RMSSD** using separate fast (8 s) and long-term (5 min) processing windows.
+- Logged processed ECG signals and extracted parameters to CSV while simultaneously displaying a live waveform with detected **R-peaks** and **T-waves**.
+- Built an asynchronous BLE data acquisition pipeline with automatic packet synchronization, frame validation, and reconnection support for continuous monitoring.
+- <img width="1495" height="756" alt="image" src="https://github.com/user-attachments/assets/289fc81d-e695-424e-9248-0da2ec7a4994" />
