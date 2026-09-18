@@ -46,4 +46,4 @@ The digitized ECG data is streamed from the **STM32WB55** to a Python applicatio
 - Computed real-time **Heart Rate (HR)**, **SDNN**, and **RMSSD** using separate fast (8 s) and long-term (5 min) processing windows.
 - Logged processed ECG signals and extracted parameters to CSV while simultaneously displaying a live waveform with detected **R-peaks** and **T-waves**.
 - Built an asynchronous BLE data acquisition pipeline with automatic packet synchronization, frame validation, and reconnection support for continuous monitoring.
-- <img width="1495" height="756" alt="image" src="https://github.com/user-attachments/assets/289fc81d-e695-424e-9248-0da2ec7a4994" />
+<img width="1600" height="1200" alt="ecg_final" src="https://github.com/user-attachments/assets/a9be5a51-811c-44c9-9de7-7bcd37e1a55b" />
